@@ -153,11 +153,11 @@
     
   <!-- [![](../_assets/公式_20180709113352.png)](http://www.codecogs.com/eqnedit.php?latex=P(Y=0|x)=1-P(Y=1|x)) -->
   
-  [![](../_assets/公式_20180709113801.png)](http://www.codecogs.com/eqnedit.php?latex=x\in&space;\mathbf{R}^n,Y\in&space;\left&space;\{&space;0,1&space;\right&space;\})
+  ![](../_assets/公式_20180709113801.png)
 
 - 通常会将以上两个分布记作：
 
-  [![](../_assets/公式_20180709153307.png)](http://www.codecogs.com/eqnedit.php?latex=\begin{aligned}&space;&P(Y=1|x)={\color{Blue}&space;\sigma(x)}\\&space;&P(Y=0|x)={\color{Blue}&space;1-\sigma(x)}&space;\end{aligned})
+  ![](../_assets/公式_20180709153307.png)
 
 > 《统计学习方法》 6.1 逻辑斯蒂回归模型
 >> 原书中记作 `π(x)` 和 `1-π(x)`，这里为了跟神经网络中统一，使用 `σ`
