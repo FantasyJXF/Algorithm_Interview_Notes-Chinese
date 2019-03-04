@@ -2,11 +2,11 @@
 ===
 > [Applications](https://keras.io/applications/) - Keras Documentation 
 
-- [2015] VGGNet(16/19) [2]
+- [2015] VGGNet(16/19)[2]
 - [2015] GoogleNet [10]
 - [2016] Inception-v1/v2/v3 [4]
 - [2016] ResNet [3]
-- [2017] Xception [1]
+- [2017] Xception[1]
 - [2017] InceptionResNet-(v1/v2)、Inception-v4 [5]
 - [2017] MobileNet [6]
 - [2017] DenseNet [7]
@@ -32,8 +32,9 @@ Index
 
 
 ## Reference
-- [1] [Xception: Deep Learning with Depthwise Separable Convolutions, CVPR 2017.](pdf/基本模型/[2017].Xception.(CVPR).pdf)
-- [2] [Very Deep Convolutional Networks for Large-Scale Image Recognition, ICLR 2015.](pdf/基本模型/[2015].VGGNet.(ICLR).pdf)
+
+[1]: Xception: Deep Learning with Depthwise Separable Convolutions, CVPR 2017.
+[2]: Very Deep Convolutional Networks for Large-Scale Image Recognition, ICLR 2015.
 - [3] Deep Residual Learning for Image Recognition, CVPR 2016.
 - [4] Rethinking the Inception Architecture for Computer Vision, CVPR 2016.
 - [5] Inception-v4, Inception-ResNet and the Impact of Residual Connections on Learning, AAAI 2017.
@@ -41,4 +42,3 @@ Index
 - [7] Densely Connected Convolutional Networks, CVPR 2017.
 - [8] Learning Transferable Architectures for Scalable Image Recognition, arXiv 2017.
 - [9] MobileNetV2: Inverted Residuals and Linear Bottlenecks, CVPR 2018.
-- [10] 
