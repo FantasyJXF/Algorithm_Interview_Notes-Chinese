@@ -32,8 +32,8 @@ Index
 
 
 ## Reference
-- [1] Xception: Deep Learning with Depthwise Separable Convolutions, CVPR 2017.
-- [2] Very Deep Convolutional Networks for Large-Scale Image Recognition, ICLR 2015.
+- [1] [Xception: Deep Learning with Depthwise Separable Convolutions, CVPR 2017.](pdf/基本模型/[2017].Xception.(CVPR).pdf)
+- [2] [Very Deep Convolutional Networks for Large-Scale Image Recognition, ICLR 2015.](pdf/基本模型/[2015].VGGNet.(ICLR).pdf)
 - [3] Deep Residual Learning for Image Recognition, CVPR 2016.
 - [4] Rethinking the Inception Architecture for Computer Vision, CVPR 2016.
 - [5] Inception-v4, Inception-ResNet and the Impact of Residual Connections on Learning, AAAI 2017.

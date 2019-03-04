@@ -297,6 +297,10 @@ Index
 
     <div align="center"><a href="http://www.codecogs.com/eqnedit.php?latex=\large&space;\begin{aligned}&space;\mathrm{BN}(\boldsymbol{x_i})&=\gamma\frac{\boldsymbol{x_i}-\boldsymbol{\mathrm{E}[x_i]}}{\sqrt{\boldsymbol{\mathrm{Var}[x_i]}&plus;\epsilon}}&plus;\beta\\&space;&=\frac{\gamma}{\sqrt{\boldsymbol{\mathrm{Var}[x_i]}&plus;\epsilon}}\boldsymbol{x_i}&plus;\left&space;(&space;\beta-\frac{\gamma\boldsymbol{\mathrm{E}[x_i]}}{\sqrt{\boldsymbol{\mathrm{Var}[x_i]}&plus;\epsilon}}&space;\right&space;)&space;\end{aligned}"><img src="../_assets/公式_20180903224557.png" height="" /></a></div>
 
+    <div align="center"><img src="../_assets/公式_20180903224557.png" height="" /></div>
+
+$$ y = frac{a}{b} + c_{1} $$    
+
 - **完整算法**：
     <div align="center"><img src="../_assets/TIM截图20180903224842.png" height="" /></div>
 
