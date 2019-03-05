@@ -73,7 +73,7 @@
 
   注意：`x_i` 和 `x^(i)` 含义不同，前者表示训练集中第 i 个实例，后者表示特征向量中的第 i 个分量；因此，通常记训练集为：
 
-  ![](../.gitbook/assets/gong-shi-20180713132400%20%281%29.png)
+  ![](../.gitbook/assets/gong-shi-20180713132400.png)
 
   > 特征向量用小`n`表示维数，训练集用大`N`表示个数
 
@@ -248,7 +248,7 @@
 
 * 训练集 `T`
 
-  \[![](../.gitbook/assets/gong-shi-20180713132400%20%282%29.png)\]\([http://www.codecogs.com/eqnedit.php?latex=T=\left&space;{&space;\(x\_1,y\_1\),\(x\_2,y\_2\),\cdots,\(x\_N,y\_N\)&space;\right&space;}](http://www.codecogs.com/eqnedit.php?latex=T=\left&space;\{&space;%28x_1,y_1%29,%28x_2,y_2%29,\cdots,%28x_N,y_N%29&space;\right&space;\})\)
+  \[![](../.gitbook/assets/gong-shi-20180713132400.png)\]\([http://www.codecogs.com/eqnedit.php?latex=T=\left&space;{&space;\(x\_1,y\_1\),\(x\_2,y\_2\),\cdots,\(x\_N,y\_N\)&space;\right&space;}](http://www.codecogs.com/eqnedit.php?latex=T=\left&space;\{&space;%28x_1,y_1%29,%28x_2,y_2%29,\cdots,%28x_N,y_N%29&space;\right&space;\})\)
 
 * **分离超平面** `(w,b)`
 
