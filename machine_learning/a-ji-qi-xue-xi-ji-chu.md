@@ -2,13 +2,13 @@
 
 ## Index
 
-* [偏差与方差](a-ji-qi-xue-xi-ji-chu.md#偏差与方差)
+* [偏差与方差](a-ji-qi-xue-xi-ji-chu.md#pian-cha-yu-fang-cha)
   * [导致偏差和方差的原因](a-ji-qi-xue-xi-ji-chu.md#导致偏差和方差的原因)
-  * [深度学习中的偏差与方差](a-ji-qi-xue-xi-ji-chu.md#深度学习中的偏差与方差)
+  * [深度学习中的偏差与方差](a-ji-qi-xue-xi-ji-chu.md#shen-du-xue-xi-zhong-de-pian-cha-yu-fang-cha)
   * [偏差/方差 与 Boosting/Bagging](a-ji-qi-xue-xi-ji-chu.md#偏差方差-与-boostingbagging)
   * [偏差与方差的计算公式](a-ji-qi-xue-xi-ji-chu.md#偏差与方差的计算公式)
   * [偏差与方差的权衡（过拟合与模型复杂度的权衡）](a-ji-qi-xue-xi-ji-chu.md#偏差与方差的权衡过拟合与模型复杂度的权衡)
-* [生成模型与判别模型](a-ji-qi-xue-xi-ji-chu.md#生成模型与判别模型)
+* [生成模型与判别模型](a-ji-qi-xue-xi-ji-chu.md#sheng-cheng-mo-xing-yu-pan-bie-mo-xing)
 * [先验概率与后验概率](a-ji-qi-xue-xi-ji-chu.md#先验概率与后验概率)
 
 ## 偏差与方差
@@ -43,31 +43,34 @@
 * 但是过强的拟合能力会导致较大的方差，使模型的测试误差（**泛化误差**）增大；
 * 因此深度学习的核心工作之一就是研究如何降低模型的泛化误差，这类方法统称为**正则化方法**。
 
-  > ../深度学习/[正则化](a-ji-qi-xue-xi-ji-chu.md#https://fantasy-jxf.gitbook.io/artificial-intelligence/deep_learning/a-shen-du-xue-xi-ji-chu#zheng-ze-hua)
+  > ../深度学习/[正则化](../deep_learning/a-shen-du-xue-xi-ji-chu#zheng-ze-hua)
 
 ### 偏差/方差 与 Boosting/Bagging
 
-> ./集成学习专题/[Boosting/Bagging 与 偏差/方差 的关系](a-ji-qi-xue-xi-ji-chu.md#https://fantasy-jxf.gitbook.io/artificial-intelligence/machine_learning/c-zhuan-ti-ji-cheng-xue-xi#boostingbagging-yu-pian-cha-fang-cha-de-guan-xi)
+> ./集成学习专题/[Boosting/Bagging 与 偏差/方差 的关系](a-ji-qi-xue-xi-ji-chu.md#boostingbagging-yu-pian-cha-fang-cha-de-guan-xi)
 
 ### 偏差与方差的计算公式
 
 * 记在**训练集 D** 上学得的模型为 
+  ![](../.gitbook/assets/gong-shi-20180817211749.png)
 
-模型的**期望预测**为
+   模型的**期望预测**为
 
 ![](../.gitbook/assets/gong-shi-20180817210758.png)
 
 * **偏差**（Bias）
 
   > **偏差**度量了学习算法的期望预测与真实结果的偏离程度，即刻画了学习算法本身的拟合能力；
+  ![](../.gitbook/assets/gong-shi-20180817210106.png)
 
 * **方差**（Variance）
 
+  ![](../.gitbook/assets/gong-shi-20180817211903.png)
+
   > **方差**度量了同样大小的**训练集的变动**所导致的学习性能的变化，即刻画了数据扰动所造成的影响（模型的稳定性）；
 
-  ![](../.gitbook/assets/gong-shi-20180817212111.png) --&gt;
-
 * **噪声**则表达了在当前任务上任何学习算法所能达到的期望泛化误差的下界，即刻画了学习问题本身的难度。
+
 * “**偏差-方差分解**”表明模型的泛化能力是由算法的能力、数据的充分性、任务本身的难度共同决定的。
 
 ### 偏差与方差的权衡（过拟合与模型复杂度的权衡）
@@ -98,11 +101,16 @@
 > * 这个模型的一般形式为一个**决策函数**或一个**条件概率分布**（后验概率）：
 
 * **决策函数**：输入 X 返回 Y；其中 Y 与一个**阈值**比较，然后根据比较结果判定 X 的类别
+
 * **条件概率分布**：输入 X 返回 **X 属于每个类别的概率**；将其中概率最大的作为 X 所属的类别
   * 监督学习模型可分为**生成模型**与**判别模型**
+
 * **判别模型**直接学习决策函数或者条件概率分布
   * 直观来说，**判别模型**学习的是类别之间的最优分隔面，反映的是不同类数据之间的差异
+
 * **生成模型**学习的是联合概率分布`P(X,Y)`，然后根据条件概率公式计算 `P(Y|X)`
+
+  ![](../.gitbook/assets/gong-shi-20180817223923.png)
 
 **两者之间的联系**
 
@@ -160,3 +168,4 @@
 
 **贝叶斯公式**
 
+![](../_assets/公式_20180817230314.png)

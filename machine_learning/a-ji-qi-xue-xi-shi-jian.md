@@ -6,10 +6,10 @@
 
 ## Index
 
-* [超参数选择](a-ji-qi-xue-xi-shi-jian.md#超参数选择)
+* [超参数选择](a-ji-qi-xue-xi-shi-jian.md#chao-can-shu-xuan-ze)
   * [Grid Search](a-ji-qi-xue-xi-shi-jian.md#grid-search)
   * [Random Search](a-ji-qi-xue-xi-shi-jian.md#random-search)
-  * [相关库（未使用）](a-ji-qi-xue-xi-shi-jian.md#相关库未使用)
+  * [相关库（未使用）](a-ji-qi-xue-xi-shi-jian.md#xiang-guan-ku-wei-shi-yong)
 * [几种参数估计的区别于联系: MLE、MAP、贝叶斯 TODO](a-ji-qi-xue-xi-shi-jian.md#几种参数估计的区别于联系-mlemap贝叶斯-todo)
 * [余弦相似度（Cos距离）与欧氏距离的区别和联系](a-ji-qi-xue-xi-shi-jian.md#余弦相似度cos距离与欧氏距离的区别和联系)
 * [监督学习和无监督学习](a-ji-qi-xue-xi-shi-jian.md#监督学习和无监督学习)
@@ -71,10 +71,10 @@
 * 答：
 
   硬币：
+  ![](../_assets/公式_20180620160408.png)
 
-```text
-六面体：<div align="center"><a href="http://www.codecogs.com/eqnedit.php?latex=-\sum^{n}_{i=1}P(X_i)\log&space;P(X_i)&space;=&space;-6*\frac{1}{6}*\log&space;P(\frac{1}{6})\approx&space;2.6&space;\text{bit}"><img src="../_assets/公式_20180620160538.png" height="" /></a></div>
-```
+  六面体：
+  ![](../_assets/公式_20180620160538.png)
 
 ## 混淆矩阵、模型度量指标：准确率、精确率、召回率、F1 值等
 
@@ -85,17 +85,21 @@
 * False Positive\(FP\)：将负类预测为正类数 → 误报 \(Type I error\).
 * False Negative\(FN\)：将正类预测为负类数 → 漏报 \(Type II error\).
 
-**准确率**（accuracy） ![](../.gitbook/assets/tim-jie-tu-20180620171915.png)
+**准确率**（accuracy）
+![](../.gitbook/assets/tim-jie-tu-20180620171915.png)
 
-**精确率**（precision） ![](../.gitbook/assets/tim-jie-tu-20180620171300%20%281%29.png)
+**精确率**（precision） 
+![](../.gitbook/assets/tim-jie-tu-20180620171300%20%281%29.png)
 
 > 准确率与精确率的区别：
 >
 > > 在正负样本不平衡的情况下，**准确率**这个评价指标有很大的缺陷。比如在互联网广告里面，点击的数量是很少的，一般只有千分之几，如果用acc，即使全部预测成负类（不点击）acc 也有 99% 以上，没有意义。
 
-**召回率**（recall, sensitivity, true positive rate） ![](../.gitbook/assets/tim-jie-tu-20180620190555%20%281%29.png)
+**召回率**（recall, sensitivity, true positive rate）
+![](../.gitbook/assets/tim-jie-tu-20180620190555%20%281%29.png)
 
-**F1值**——精确率和召回率的调和均值 ![](../.gitbook/assets/tim-jie-tu-20180620191137.png)
+**F1值**——精确率和召回率的调和均值 
+![](../.gitbook/assets/tim-jie-tu-20180620191137.png)
 
 > 只有当精确率和召回率都很高时，F1值才会高
 
@@ -205,15 +209,22 @@
 **支持度**（Support）
 
 * X → Y 的支持度表示项集 {X,Y} 在总项集中出现的概率
+
+  ![](../_assets/公式_20180620204006.png)
+
 * 其中，I 表示总事务集，`num()`表示事务集中特定项集出现的次数，`P(X)=num(X)/num(I)`
 
 **置信度**（Confidence）
 
 * X → Y 的置信度表示在先决条件 X 发生的情况下，由规则 X → Y 推出 Y 的概率。
 
+  ![](../_assets/公式_20180620205055.png)
+
 **提升度**（Lift）
 
 * X → Y 的提升度表示含有X的条件下，同时含有Y的概率，与Y总体发生的概率之比。
+
+  ![](../_assets/公式_20180620213601.png)
 
 ## 规则的有效性：
 
