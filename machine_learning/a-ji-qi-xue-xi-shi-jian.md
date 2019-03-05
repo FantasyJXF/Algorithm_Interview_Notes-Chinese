@@ -71,10 +71,12 @@
 * 答：
 
   硬币：
-  ![](../_assets/公式_20180620160408.png)
 
-  六面体：
-  ![](../_assets/公式_20180620160538.png)
+![](../.gitbook/assets/gong-shi-20180620160408.png)
+
+六面体： 
+
+![](../.gitbook/assets/gong-shi-20180620160538.png)
 
 ## 混淆矩阵、模型度量指标：准确率、精确率、召回率、F1 值等
 
@@ -86,9 +88,11 @@
 * False Negative\(FN\)：将正类预测为负类数 → 漏报 \(Type II error\).
 
 **准确率**（accuracy）
+
 ![](../.gitbook/assets/tim-jie-tu-20180620171915.png)
 
 **精确率**（precision） 
+
 ![](../.gitbook/assets/tim-jie-tu-20180620171300%20%281%29.png)
 
 > 准确率与精确率的区别：
@@ -96,9 +100,11 @@
 > > 在正负样本不平衡的情况下，**准确率**这个评价指标有很大的缺陷。比如在互联网广告里面，点击的数量是很少的，一般只有千分之几，如果用acc，即使全部预测成负类（不点击）acc 也有 99% 以上，没有意义。
 
 **召回率**（recall, sensitivity, true positive rate）
+
 ![](../.gitbook/assets/tim-jie-tu-20180620190555%20%281%29.png)
 
-**F1值**——精确率和召回率的调和均值 
+**F1值**——精确率和召回率的调和均值
+
 ![](../.gitbook/assets/tim-jie-tu-20180620191137.png)
 
 > 只有当精确率和召回率都很高时，F1值才会高
@@ -201,7 +207,7 @@
 ## 数据清洗与特征处理
 
 > geekcircle/machine-learning-interview-qa/[8.md](https://github.com/geekcircle/machine-learning-interview-qa/blob/master/questions/8.md)
-
+>
 > [机器学习中的数据清洗与特征处理综述](https://tech.meituan.com/machinelearning-data-feature-process.html) - 美团点评技术
 
 ## 关联规则挖掘的 3 个度量指标：支持度、置信度、提升度
@@ -210,7 +216,7 @@
 
 * X → Y 的支持度表示项集 {X,Y} 在总项集中出现的概率
 
-  ![](../_assets/公式_20180620204006.png)
+![](../.gitbook/assets/gong-shi-20180620204006.png)
 
 * 其中，I 表示总事务集，`num()`表示事务集中特定项集出现的次数，`P(X)=num(X)/num(I)`
 
@@ -218,13 +224,13 @@
 
 * X → Y 的置信度表示在先决条件 X 发生的情况下，由规则 X → Y 推出 Y 的概率。
 
-  ![](../_assets/公式_20180620205055.png)
+![](../.gitbook/assets/gong-shi-20180620205055.png)
 
 **提升度**（Lift）
 
 * X → Y 的提升度表示含有X的条件下，同时含有Y的概率，与Y总体发生的概率之比。
 
-  ![](../_assets/公式_20180620213601.png)
+![](../.gitbook/assets/gong-shi-20180620213601.png)
 
 ## 规则的有效性：
 

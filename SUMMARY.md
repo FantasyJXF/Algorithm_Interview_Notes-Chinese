@@ -12,7 +12,7 @@
   * [CNN](deep_learning/b-zhuan-ti-cnn.md)
   * [RNN](deep_learning/b-zhuan-ti-rnn.md)
   * [优化算法](deep_learning/c-zhuan-ti-you-hua-suan-fa.md)
-  * [序列建模](A-深度学习/D-专题-序列建模.md.md)
+  * [序列建模](deep_learning/xu-lie-jian-mo.md)
   * [《深度学习》整理](deep_learning/shen-du-xue-xi-zheng-li.md)
   * [术语表](deep_learning/bei-wang-shu-yu-biao.md)
 * [自然语言处理](natural_language_processing/README.md)

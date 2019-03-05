@@ -65,16 +65,15 @@
 ## 符号说明
 
 * 基本遵从《统计学习方法》一书中的符号表示。
-
 * 除特别说明，默认`w`为行向量，`x`为列向量，以避免在`wx`中使用转置符号；但有些公式为了更清晰区分向量与标量，依然会使用`^T`的上标，注意区分。
 
   输入实例`x`的特征向量记为：
 
-  ![](../_assets/公式_20180713114026.png")
+  !\[\]\(../\_assets/公式\_20180713114026.png"\)
 
   注意：`x_i` 和 `x^(i)` 含义不同，前者表示训练集中第 i 个实例，后者表示特征向量中的第 i 个分量；因此，通常记训练集为：
 
-  ![](../_assets/公式_20180713132400.png)
+  ![](../.gitbook/assets/gong-shi-20180713132400%20%281%29.png)
 
   > 特征向量用小`n`表示维数，训练集用大`N`表示个数
 
@@ -133,7 +132,7 @@
 
 * **二项**逻辑斯蒂回归模型即如下的**条件概率分布**
 
-  \[![](../.gitbook/assets/gong-shi-20180709152707%20%281%29.png)\]\([http://www.codecogs.com/eqnedit.php?latex=P\(Y=1\|x\)=\frac{\exp\(wx\)}{1&plus;\exp\(wx\)}=\frac{1}{1&plus;\exp\(-wx\)}](http://www.codecogs.com/eqnedit.php?latex=P%28Y=1|x%29=\frac{\exp%28wx%29}{1&plus;\exp%28wx%29}=\frac{1}{1&plus;\exp%28-wx%29})\)
+  \[![](../.gitbook/assets/gong-shi-20180709152707%20%281%29.png)\]\([http://www.codecogs.com/eqnedit.php?latex=P\(Y=1\|x\)=\frac{\exp\(wx\)}{1+\exp\(wx\)}=\frac{1}{1+\exp\(-wx\)}](http://www.codecogs.com/eqnedit.php?latex=P%28Y=1|x%29=\frac{\exp%28wx%29}{1&plus;\exp%28wx%29}=\frac{1}{1&plus;\exp%28-wx%29})\)
 
   \[![](../.gitbook/assets/gong-shi-20180709113237%20%281%29.png)\]\([http://www.codecogs.com/eqnedit.php?latex=P\(Y=0\|x\)=1-P\(Y=1\|x](http://www.codecogs.com/eqnedit.php?latex=P%28Y=0|x%29=1-P%28Y=1|x)\)\)
 
@@ -163,7 +162,7 @@
 * 给定训练集 `T={(x1,y1),..,(xN,yN)}`，其中 `x ∈ R^n, y ∈ {0, 1}`
 * **逻辑斯蒂回归**的定义：
 
-  \[![](../.gitbook/assets/gong-shi-20180709161030.png)\]\([http://www.codecogs.com/eqnedit.php?latex=\begin{aligned}&space;&P\(Y=1\|x\)={\color{Blue}&space;\sigma\(x\)}\\&space;&P\(Y=0\|x\)={\color{Blue}&space;1-\sigma\(x\)}&space;\end{aligned}](http://www.codecogs.com/eqnedit.php?latex=\begin{aligned}&space;&P%28Y=1|x%29={\color{Blue}&space;\sigma%28x%29}\\&space;&P%28Y=0|x%29={\color{Blue}&space;1-\sigma%28x%29}&space;\end{aligned})\)
+  \[![](../.gitbook/assets/gong-shi-20180709161030.png)\]\([http://www.codecogs.com/eqnedit.php?latex=\begin{aligned}&space;&P\(Y=1\|x\)={\color{Blue}&space;\sigma\(x\)}\&space;&P\(Y=0\|x\)={\color{Blue}&space;1-\sigma\(x\)}&space;\end{aligned}](http://www.codecogs.com/eqnedit.php?latex=\begin{aligned}&space;&P%28Y=1|x%29={\color{Blue}&space;\sigma%28x%29}\\&space;&P%28Y=0|x%29={\color{Blue}&space;1-\sigma%28x%29}&space;\end{aligned})\)
 
 * **负对数函数**作为损失函数：
 
@@ -175,7 +174,7 @@
 
 * **求梯度**
 
-  \[![](../.gitbook/assets/gong-shi-20180713132107.png)\]\([http://www.codecogs.com/eqnedit.php?latex=\begin{aligned}&space;\frac{\partial&space;L\(w\)}{\partial&space;w}&=-\sum\_{i=1}^N&space;\left&space;\[&space;y\_ix\_i-\frac{\exp\(wx\_i\)}{1&plus;\exp\(wx\_i\)}x\_i&space;\right&space;\]\\&space;&=\sum\_{i=1}^N&space;\[\sigma&space;\(x\_i\)-y\_i\]x\_i&space;\end{aligned}](http://www.codecogs.com/eqnedit.php?latex=\begin{aligned}&space;\frac{\partial&space;L%28w%29}{\partial&space;w}&=-\sum_{i=1}^N&space;\left&space;[&space;y_ix_i-\frac{\exp%28wx_i%29}{1&plus;\exp%28wx_i%29}x_i&space;\right&space;]\\&space;&=\sum_{i=1}^N&space;[\sigma&space;%28x_i%29-y_i]x_i&space;\end{aligned})\)
+  \[![](../.gitbook/assets/gong-shi-20180713132107.png)\]\([http://www.codecogs.com/eqnedit.php?latex=\begin{aligned}&space;\frac{\partial&space;L\(w\)}{\partial&space;w}&=-\sum\_{i=1}^N&space;\left&space;\[&space;y\_ix\_i-\frac{\exp\(wx\_i\)}{1+\exp\(wx\_i\)}x\_i&space;\right&space;\]\&space;&=\sum\_{i=1}^N&space;\[\sigma&space;\(x\_i\)-y\_i\]x\_i&space;\end{aligned}](http://www.codecogs.com/eqnedit.php?latex=\begin{aligned}&space;\frac{\partial&space;L%28w%29}{\partial&space;w}&=-\sum_{i=1}^N&space;\left&space;[&space;y_ix_i-\frac{\exp%28wx_i%29}{1&plus;\exp%28wx_i%29}x_i&space;\right&space;]\\&space;&=\sum_{i=1}^N&space;[\sigma&space;%28x_i%29-y_i]x_i&space;\end{aligned})\)
 
 * 使用**梯度下降法**求解参数
 
@@ -185,7 +184,7 @@
 
 * 设 `Y ∈ {1,2,..K}`，则多项式逻辑斯蒂回归模型为：
 
-  \[![](../.gitbook/assets/gong-shi-20180709162840%20%281%29.png)\]\([http://www.codecogs.com/eqnedit.php?latex=\begin{aligned}&space;P\(Y=k\|x\)&=\frac{\exp\(w\_kx\)}{1&plus;\sum\_{k=1}^{K-1}&space;\exp\(w\_kx\)}&space;\quad&space;k=1,2,..,K-1&space;\\&space;P\(Y=K\|x\)&=\frac{1}{1&plus;\sum\_{k=1}^{K-1}\exp\(w\_kx\)}&space;\end{aligned}](http://www.codecogs.com/eqnedit.php?latex=\begin{aligned}&space;P%28Y=k|x%29&=\frac{\exp%28w_kx%29}{1&plus;\sum_{k=1}^{K-1}&space;\exp%28w_kx%29}&space;\quad&space;k=1,2,..,K-1&space;\\&space;P%28Y=K|x%29&=\frac{1}{1&plus;\sum_{k=1}^{K-1}\exp%28w_kx%29}&space;\end{aligned})\)
+  \[![](../.gitbook/assets/gong-shi-20180709162840%20%281%29.png)\]\([http://www.codecogs.com/eqnedit.php?latex=\begin{aligned}&space;P\(Y=k\|x\)&=\frac{\exp\(w\_kx\)}{1+\sum\_{k=1}^{K-1}&space;\exp\(w\_kx\)}&space;\quad&space;k=1,2,..,K-1&space;\&space;P\(Y=K\|x\)&=\frac{1}{1+\sum\_{k=1}^{K-1}\exp\(w\_kx\)}&space;\end{aligned}](http://www.codecogs.com/eqnedit.php?latex=\begin{aligned}&space;P%28Y=k|x%29&=\frac{\exp%28w_kx%29}{1&plus;\sum_{k=1}^{K-1}&space;\exp%28w_kx%29}&space;\quad&space;k=1,2,..,K-1&space;\\&space;P%28Y=K|x%29&=\frac{1}{1&plus;\sum_{k=1}^{K-1}\exp%28w_kx%29}&space;\end{aligned})\)
 
 * 类似 `Softmax`
 
@@ -249,7 +248,7 @@
 
 * 训练集 `T`
 
-  \[![](../.gitbook/assets/gong-shi-20180713132400%20%281%29.png)\]\([http://www.codecogs.com/eqnedit.php?latex=T=\left&space;\{&space;\(x\_1,y\_1\),\(x\_2,y\_2\),\cdots,\(x\_N,y\_N\)&space;\right&space;\}](http://www.codecogs.com/eqnedit.php?latex=T=\left&space;\{&space;%28x_1,y_1%29,%28x_2,y_2%29,\cdots,%28x_N,y_N%29&space;\right&space;\})\)
+  \[![](../.gitbook/assets/gong-shi-20180713132400%20%282%29.png)\]\([http://www.codecogs.com/eqnedit.php?latex=T=\left&space;{&space;\(x\_1,y\_1\),\(x\_2,y\_2\),\cdots,\(x\_N,y\_N\)&space;\right&space;}](http://www.codecogs.com/eqnedit.php?latex=T=\left&space;\{&space;%28x_1,y_1%29,%28x_2,y_2%29,\cdots,%28x_N,y_N%29&space;\right&space;\})\)
 
 * **分离超平面** `(w,b)`
 
@@ -257,13 +256,13 @@
 
   如果使用映射函数，那么分离超平面为
 
-  \[![](../.gitbook/assets/gong-shi-20180713111746.png)\]\([http://www.codecogs.com/eqnedit.php?latex=w^\*\cdot&space;\Phi&space;\(x\)&plus;b^\*=0](http://www.codecogs.com/eqnedit.php?latex=w^*\cdot&space;\Phi&space;%28x%29&plus;b^*=0)\)
+  \[![](../.gitbook/assets/gong-shi-20180713111746.png)\]\([http://www.codecogs.com/eqnedit.php?latex=w^\*\cdot&space;\Phi&space;\(x\)+b^\*=0](http://www.codecogs.com/eqnedit.php?latex=w^*\cdot&space;\Phi&space;%28x%29&plus;b^*=0)\)
 
   > 映射函数 `Φ(x)` 定义了从输入空间到特征空间的变换，特征空间通常是更高维的，甚至无穷维；方便起见，这里假设 `Φ(x)` 做的是恒等变换。
 
 * 分类决策函数 `f(x)`
 
-  \[![](../.gitbook/assets/gong-shi-20180713132655%20%281%29.png)\]\([http://www.codecogs.com/eqnedit.php?latex=f\(x\)=\mathrm{sign}\(w^\*\cdot&space;x&plus;b^\*](http://www.codecogs.com/eqnedit.php?latex=f%28x%29=\mathrm{sign}%28w^*\cdot&space;x&plus;b^*)\)\)
+  \[![](../.gitbook/assets/gong-shi-20180713132655%20%281%29.png)\]\([http://www.codecogs.com/eqnedit.php?latex=f\(x\)=\mathrm{sign}\(w^\*\cdot&space;x+b^\*](http://www.codecogs.com/eqnedit.php?latex=f%28x%29=\mathrm{sign}%28w^*\cdot&space;x&plus;b^*)\)\)
 
 ### **SVM 标准问题的推导**\(2\)
 
@@ -271,7 +270,7 @@
 
    给定训练集`T`和超平面`(w,b)`，定义**函数间隔**`γ^`：
 
-   \[![](../.gitbook/assets/gong-shi-20180713134514%20%281%29.png)\]\([http://www.codecogs.com/eqnedit.php?latex=\begin{aligned}&space;\hat{\gamma}&=\underset{i=1,\cdots,N}{\min}\,y\_i\(wx\_i&plus;b\)&space;\\&space;&=\underset{i=1,\cdots,N}{\min}\,\hat{\gamma}\_i\end{aligned}](http://www.codecogs.com/eqnedit.php?latex=\begin{aligned}&space;\hat{\gamma}&=\underset{i=1,\cdots,N}{\min}\,y_i%28wx_i&plus;b%29&space;\\&space;&=\underset{i=1,\cdots,N}{\min}\,\hat{\gamma}_i\end{aligned})\)
+   \[![](../.gitbook/assets/gong-shi-20180713134514%20%281%29.png)\]\([http://www.codecogs.com/eqnedit.php?latex=\begin{aligned}&space;\hat{\gamma}&=\underset{i=1,\cdots,N}{\min}\,y\_i\(wx\_i+b\)&space;\&space;&=\underset{i=1,\cdots,N}{\min}\,\hat{\gamma}\_i\end{aligned}](http://www.codecogs.com/eqnedit.php?latex=\begin{aligned}&space;\hat{\gamma}&=\underset{i=1,\cdots,N}{\min}\,y_i%28wx_i&plus;b%29&space;\\&space;&=\underset{i=1,\cdots,N}{\min}\,\hat{\gamma}_i\end{aligned})\)
 
    对 `w` 作规范化，使函数间隔成为**几何间隔**`γ`
 
@@ -279,15 +278,15 @@
 
 2. **最大化几何间隔**
 
-   \[![](../.gitbook/assets/gong-shi-20180713142726.png)\]\([http://www.codecogs.com/eqnedit.php?latex=\begin{aligned}&space;&{\color{Red}&space;\underset{w,b}{\max}}&space;\quad\gamma&space;\\&space;&\&space;\mathrm{s.t.}\quad\,&space;y\_i\(\frac{w}{{\color{Red}&space;\left&space;\|&space;w&space;\right&space;\|}}x\_i&plus;\frac{b}{{\color{Red}&space;\left&space;\|&space;w&space;\right&space;\|}}\)&space;\geq&space;\gamma,\quad&space;i=1,2,\cdots,N&space;\end{aligned}](http://www.codecogs.com/eqnedit.php?latex=\begin{aligned}&space;&{\color{Red}&space;\underset{w,b}{\max}}&space;\quad\gamma&space;\\&space;&\&space;\mathrm{s.t.}\quad\,&space;y_i%28\frac{w}{{\color{Red}&space;\left&space;|&space;w&space;\right&space;|}}x_i&plus;\frac{b}{{\color{Red}&space;\left&space;|&space;w&space;\right&space;|}}%29&space;\geq&space;\gamma,\quad&space;i=1,2,\cdots,N&space;\end{aligned})\)
+   \[![](../.gitbook/assets/gong-shi-20180713142726.png)\]\([http://www.codecogs.com/eqnedit.php?latex=\begin{aligned}&space;&{\color{Red}&space;\underset{w,b}{\max}}&space;\quad\gamma&space;\&space;&\&space;\mathrm{s.t.}\quad\,&space;y\_i\(\frac{w}x\_i+\frac{b}\)&space;\geq&space;\gamma,\quad&space;i=1,2,\cdots,N&space;\end{aligned}](http://www.codecogs.com/eqnedit.php?latex=\begin{aligned}&space;&{\color{Red}&space;\underset{w,b}{\max}}&space;\quad\gamma&space;\\&space;&\&space;\mathrm{s.t.}\quad\,&space;y_i%28\frac{w}{{\color{Red}&space;\left&space;|&space;w&space;\right&space;|}}x_i&plus;\frac{b}{{\color{Red}&space;\left&space;|&space;w&space;\right&space;|}}%29&space;\geq&space;\gamma,\quad&space;i=1,2,\cdots,N&space;\end{aligned})\)
 
    由函数间隔与几何间隔的关系，等价于
 
-   \[![](../.gitbook/assets/gong-shi-20180808201943%20%281%29.png)\]\([http://www.codecogs.com/eqnedit.php?latex=\begin{aligned}&space;&\underset{w,b}{\max}&space;\quad{\color{Red}&space;\frac{\hat{\gamma}}{\left&space;\|&space;w&space;\right&space;\|}}&space;\&space;&&space;\mathrm{s.t.}\quad,&space;y\_i\(wx\_i&plus;b\)&space;\geq&space;{\color{Red}&space;\hat{\gamma}},\quad&space;i=1,2,\cdots,N&space;\end{aligned}](http://www.codecogs.com/eqnedit.php?latex=\begin{aligned}&space;&\underset{w,b}{\max}&space;\quad{\color{Red}&space;\frac{\hat{\gamma}}{\left&space;|&space;w&space;\right&space;|}}&space;\&space;&&space;\mathrm{s.t.}\quad,&space;y_i%28wx_i&plus;b%29&space;\geq&space;{\color{Red}&space;\hat{\gamma}},\quad&space;i=1,2,\cdots,N&space;\end{aligned})\)
+   \[![](../.gitbook/assets/gong-shi-20180808201943%20%281%29.png)\]\([http://www.codecogs.com/eqnedit.php?latex=\begin{aligned}&space;&\underset{w,b}{\max}&space;\quad{\color{Red}&space;\frac{\hat{\gamma}}{\left&space;\|&space;w&space;\right&space;\|}}&space;\&space;&&space;\mathrm{s.t.}\quad,&space;y\_i\(wx\_i+b\)&space;\geq&space;{\color{Red}&space;\hat{\gamma}},\quad&space;i=1,2,\cdots,N&space;\end{aligned}](http://www.codecogs.com/eqnedit.php?latex=\begin{aligned}&space;&\underset{w,b}{\max}&space;\quad{\color{Red}&space;\frac{\hat{\gamma}}{\left&space;|&space;w&space;\right&space;|}}&space;\&space;&&space;\mathrm{s.t.}\quad,&space;y_i%28wx_i&plus;b%29&space;\geq&space;{\color{Red}&space;\hat{\gamma}},\quad&space;i=1,2,\cdots,N&space;\end{aligned})\)
 
    函数间隔`γ^`的取值不会影响最终的超平面`(w,b)`：取`γ^=1`；又最大化 `1/||w||` 等价于最小化`1/2*||w||^2`，于是有
 
-   \[![](../.gitbook/assets/gong-shi-20180713143622.png)\]\([http://www.codecogs.com/eqnedit.php?latex=\begin{aligned}&space;&{\color{Red}&space;\underset{w,b}{\max}&space;}&space;\quad\frac{\hat{\gamma}}{{\color{Red}&space;\left&space;\|&space;w&space;\right&space;\|}}&space;\\&space;&\&space;\mathrm{s.t.}\quad\,&space;y\_i\(wx\_i&plus;b\)&space;\geq&space;\hat{\gamma}\_i,\quad&space;i=1,2,\cdots,N&space;\end{aligned}](http://www.codecogs.com/eqnedit.php?latex=\begin{aligned}&space;&{\color{Red}&space;\underset{w,b}{\max}&space;}&space;\quad\frac{\hat{\gamma}}{{\color{Red}&space;\left&space;|&space;w&space;\right&space;|}}&space;\\&space;&\&space;\mathrm{s.t.}\quad\,&space;y_i%28wx_i&plus;b%29&space;\geq&space;\hat{\gamma}_i,\quad&space;i=1,2,\cdots,N&space;\end{aligned})\)
+   \[![](../.gitbook/assets/gong-shi-20180713143622.png)\]\([http://www.codecogs.com/eqnedit.php?latex=\begin{aligned}&space;&{\color{Red}&space;\underset{w,b}{\max}&space;}&space;\quad\frac{\hat{\gamma}}&space;\&space;&\&space;\mathrm{s.t.}\quad\,&space;y\_i\(wx\_i+b\)&space;\geq&space;\hat{\gamma}\_i,\quad&space;i=1,2,\cdots,N&space;\end{aligned}](http://www.codecogs.com/eqnedit.php?latex=\begin{aligned}&space;&{\color{Red}&space;\underset{w,b}{\max}&space;}&space;\quad\frac{\hat{\gamma}}{{\color{Red}&space;\left&space;|&space;w&space;\right&space;|}}&space;\\&space;&\&space;\mathrm{s.t.}\quad\,&space;y_i%28wx_i&plus;b%29&space;\geq&space;\hat{\gamma}_i,\quad&space;i=1,2,\cdots,N&space;\end{aligned})\)
 
    > 为什么令`γ^=1`？——比例改变`(ω,b)`，超平面不会改变，但函数间隔`γ^`会成比例改变，因此可以通过等比例改变`(ω,b)`使函数间隔`γ^=1`
 
@@ -299,7 +298,7 @@
 
 1. 构建**拉格朗日函数**
 
-   \[![](../.gitbook/assets/gong-shi-20180713202306.png)\]\([http://www.codecogs.com/eqnedit.php?latex=\begin{aligned}&space;L\(w,b,{\color{Red}&space;\alpha}\)=&\frac{1}{2}w^Tw-\sum\_{i=1}^N{\color{Red}&space;\alpha\_i}\[y\_i\(w^Tx\_i&plus;b\)-1\]\\&space;&{\color{Red}&space;\alpha\_i&space;\geq&space;0},\quad&space;i=1,2,\cdots,N&space;\end{aligned}](http://www.codecogs.com/eqnedit.php?latex=\begin{aligned}&space;L%28w,b,{\color{Red}&space;\alpha}%29=&\frac{1}{2}w^Tw-\sum_{i=1}^N{\color{Red}&space;\alpha_i}[y_i%28w^Tx_i&plus;b%29-1]\\&space;&{\color{Red}&space;\alpha_i&space;\geq&space;0},\quad&space;i=1,2,\cdots,N&space;\end{aligned})\)
+   \[![](../.gitbook/assets/gong-shi-20180713202306.png)\]\([http://www.codecogs.com/eqnedit.php?latex=\begin{aligned}&space;L\(w,b,{\color{Red}&space;\alpha}\)=&\frac{1}{2}w^Tw-\sum\_{i=1}^N{\color{Red}&space;\alpha\_i}\[y\_i\(w^Tx\_i+b\)-1\]\&space;&{\color{Red}&space;\alpha\_i&space;\geq&space;0},\quad&space;i=1,2,\cdots,N&space;\end{aligned}](http://www.codecogs.com/eqnedit.php?latex=\begin{aligned}&space;L%28w,b,{\color{Red}&space;\alpha}%29=&\frac{1}{2}w^Tw-\sum_{i=1}^N{\color{Red}&space;\alpha_i}[y_i%28w^Tx_i&plus;b%29-1]\\&space;&{\color{Red}&space;\alpha_i&space;\geq&space;0},\quad&space;i=1,2,\cdots,N&space;\end{aligned})\)
 
 2. 标准问题是求极小极大问题：
 
@@ -317,11 +316,11 @@
 
    结果代入`L`，有：
 
-   \[![](../.gitbook/assets/gong-shi-20180713195055.png)\]\([http://www.codecogs.com/eqnedit.php?latex=\begin{aligned}&space;L\(w,b,{\color{Red}&space;\alpha}\)&space;&=\frac{1}{2}w^Tw-\sum\_{i=1}^N{\color{Red}&space;\alpha\_i}\[y\_i\(w^Tx\_i&plus;b\)-1\]\\&space;&=\frac{1}{2}w^Tw-w^T\sum\_{i=1}^N&space;\alpha\_iy\_ix\_i-b\sum\_{i=1}^N&space;\alpha\_iy\_i&plus;\sum\_{i=1}^N&space;\alpha\_i\\&space;&=\frac{1}{2}w^Tw-w^Tw&plus;\sum\_{i=1}^N&space;\alpha\_i\\&space;&=-\frac{1}{2}w^Tw&plus;\sum\_{i=1}^N&space;\alpha\_i\\&space;&=-\frac{1}{2}\sum\_{i=1}^N\sum\_{j=1}^N&space;\alpha\_i\alpha\_j\cdot&space;y\_iy\_j\cdot&space;{\color{Red}&space;x\_i^Tx\_j}&plus;\sum\_{i=1}^N&space;\alpha\_i&space;\end{aligned}](http://www.codecogs.com/eqnedit.php?latex=\begin{aligned}&space;L%28w,b,{\color{Red}&space;\alpha}%29&space;&=\frac{1}{2}w^Tw-\sum_{i=1}^N{\color{Red}&space;\alpha_i}[y_i%28w^Tx_i&plus;b%29-1]\\&space;&=\frac{1}{2}w^Tw-w^T\sum_{i=1}^N&space;\alpha_iy_ix_i-b\sum_{i=1}^N&space;\alpha_iy_i&plus;\sum_{i=1}^N&space;\alpha_i\\&space;&=\frac{1}{2}w^Tw-w^Tw&plus;\sum_{i=1}^N&space;\alpha_i\\&space;&=-\frac{1}{2}w^Tw&plus;\sum_{i=1}^N&space;\alpha_i\\&space;&=-\frac{1}{2}\sum_{i=1}^N\sum_{j=1}^N&space;\alpha_i\alpha_j\cdot&space;y_iy_j\cdot&space;{\color{Red}&space;x_i^Tx_j}&plus;\sum_{i=1}^N&space;\alpha_i&space;\end{aligned})\)
+   \[![](../.gitbook/assets/gong-shi-20180713195055.png)\]\([http://www.codecogs.com/eqnedit.php?latex=\begin{aligned}&space;L\(w,b,{\color{Red}&space;\alpha}\)&space;&=\frac{1}{2}w^Tw-\sum\_{i=1}^N{\color{Red}&space;\alpha\_i}\[y\_i\(w^Tx\_i+b\)-1\]\&space;&=\frac{1}{2}w^Tw-w^T\sum\_{i=1}^N&space;\alpha\_iy\_ix\_i-b\sum\_{i=1}^N&space;\alpha\_iy\_i+\sum\_{i=1}^N&space;\alpha\_i\&space;&=\frac{1}{2}w^Tw-w^Tw+\sum\_{i=1}^N&space;\alpha\_i\&space;&=-\frac{1}{2}w^Tw+\sum\_{i=1}^N&space;\alpha\_i\&space;&=-\frac{1}{2}\sum\_{i=1}^N\sum\_{j=1}^N&space;\alpha\_i\alpha\_j\cdot&space;y\_iy\_j\cdot&space;{\color{Red}&space;x\_i^Tx\_j}+\sum\_{i=1}^N&space;\alpha\_i&space;\end{aligned}](http://www.codecogs.com/eqnedit.php?latex=\begin{aligned}&space;L%28w,b,{\color{Red}&space;\alpha}%29&space;&=\frac{1}{2}w^Tw-\sum_{i=1}^N{\color{Red}&space;\alpha_i}[y_i%28w^Tx_i&plus;b%29-1]\\&space;&=\frac{1}{2}w^Tw-w^T\sum_{i=1}^N&space;\alpha_iy_ix_i-b\sum_{i=1}^N&space;\alpha_iy_i&plus;\sum_{i=1}^N&space;\alpha_i\\&space;&=\frac{1}{2}w^Tw-w^Tw&plus;\sum_{i=1}^N&space;\alpha_i\\&space;&=-\frac{1}{2}w^Tw&plus;\sum_{i=1}^N&space;\alpha_i\\&space;&=-\frac{1}{2}\sum_{i=1}^N\sum_{j=1}^N&space;\alpha_i\alpha_j\cdot&space;y_iy_j\cdot&space;{\color{Red}&space;x_i^Tx_j}&plus;\sum_{i=1}^N&space;\alpha_i&space;\end{aligned})\)
 
    即
 
-   \[![](../.gitbook/assets/gong-shi-20180713195135.png)\]\([http://www.codecogs.com/eqnedit.php?latex=\begin{aligned}&space;L\(w,b,{\color{Red}&space;\alpha}\)&space;&=\frac{1}{2}w^Tw-\sum\_{i=1}^N{\color{Red}&space;\alpha\_i}\[y\_i\(w^Tx\_i&plus;b\)-1\]\\&space;&=\frac{1}{2}w^Tw-w^T\sum\_{i=1}^N&space;\alpha\_iy\_ix\_i-b\sum\_{i=1}^N&space;\alpha\_iy\_i&plus;\sum\_{i=1}^N&space;\alpha\_i\\&space;&=\frac{1}{2}w^Tw-w^Tw&plus;\sum\_{i=1}^N&space;\alpha\_i\\&space;&=-\frac{1}{2}w^Tw&plus;\sum\_{i=1}^N&space;\alpha\_i\\&space;&=-\frac{1}{2}\sum\_{i=1}^N\sum\_{j=1}^N&space;\alpha\_i\alpha\_j\cdot&space;y\_iy\_j\cdot&space;{\color{Red}&space;x\_i^Tx\_j}&plus;\sum\_{i=1}^N&space;\alpha\_i&space;\end{aligned}](http://www.codecogs.com/eqnedit.php?latex=\begin{aligned}&space;L%28w,b,{\color{Red}&space;\alpha}%29&space;&=\frac{1}{2}w^Tw-\sum_{i=1}^N{\color{Red}&space;\alpha_i}[y_i%28w^Tx_i&plus;b%29-1]\\&space;&=\frac{1}{2}w^Tw-w^T\sum_{i=1}^N&space;\alpha_iy_ix_i-b\sum_{i=1}^N&space;\alpha_iy_i&plus;\sum_{i=1}^N&space;\alpha_i\\&space;&=\frac{1}{2}w^Tw-w^Tw&plus;\sum_{i=1}^N&space;\alpha_i\\&space;&=-\frac{1}{2}w^Tw&plus;\sum_{i=1}^N&space;\alpha_i\\&space;&=-\frac{1}{2}\sum_{i=1}^N\sum_{j=1}^N&space;\alpha_i\alpha_j\cdot&space;y_iy_j\cdot&space;{\color{Red}&space;x_i^Tx_j}&plus;\sum_{i=1}^N&space;\alpha_i&space;\end{aligned})\)
+   \[![](../.gitbook/assets/gong-shi-20180713195135.png)\]\([http://www.codecogs.com/eqnedit.php?latex=\begin{aligned}&space;L\(w,b,{\color{Red}&space;\alpha}\)&space;&=\frac{1}{2}w^Tw-\sum\_{i=1}^N{\color{Red}&space;\alpha\_i}\[y\_i\(w^Tx\_i+b\)-1\]\&space;&=\frac{1}{2}w^Tw-w^T\sum\_{i=1}^N&space;\alpha\_iy\_ix\_i-b\sum\_{i=1}^N&space;\alpha\_iy\_i+\sum\_{i=1}^N&space;\alpha\_i\&space;&=\frac{1}{2}w^Tw-w^Tw+\sum\_{i=1}^N&space;\alpha\_i\&space;&=-\frac{1}{2}w^Tw+\sum\_{i=1}^N&space;\alpha\_i\&space;&=-\frac{1}{2}\sum\_{i=1}^N\sum\_{j=1}^N&space;\alpha\_i\alpha\_j\cdot&space;y\_iy\_j\cdot&space;{\color{Red}&space;x\_i^Tx\_j}+\sum\_{i=1}^N&space;\alpha\_i&space;\end{aligned}](http://www.codecogs.com/eqnedit.php?latex=\begin{aligned}&space;L%28w,b,{\color{Red}&space;\alpha}%29&space;&=\frac{1}{2}w^Tw-\sum_{i=1}^N{\color{Red}&space;\alpha_i}[y_i%28w^Tx_i&plus;b%29-1]\\&space;&=\frac{1}{2}w^Tw-w^T\sum_{i=1}^N&space;\alpha_iy_ix_i-b\sum_{i=1}^N&space;\alpha_iy_i&plus;\sum_{i=1}^N&space;\alpha_i\\&space;&=\frac{1}{2}w^Tw-w^Tw&plus;\sum_{i=1}^N&space;\alpha_i\\&space;&=-\frac{1}{2}w^Tw&plus;\sum_{i=1}^N&space;\alpha_i\\&space;&=-\frac{1}{2}\sum_{i=1}^N\sum_{j=1}^N&space;\alpha_i\alpha_j\cdot&space;y_iy_j\cdot&space;{\color{Red}&space;x_i^Tx_j}&plus;\sum_{i=1}^N&space;\alpha_i&space;\end{aligned})\)
 
 4. 求 `L` 对 `α` 的极大，即
 
@@ -337,13 +336,13 @@
 
 5. 设 `α` 的解为 `α*`，则存在下标`j`使`α_j > 0`，可得标准问题的解为：
 
-   \[![](../.gitbook/assets/gong-shi-20180713203827.png)\]\([http://www.codecogs.com/eqnedit.php?latex=\begin{aligned}&space;w^\*&=\sum\_{i=1}^N&space;\alpha\_i^\*y\_ix\_i\\&space;b^\*&={\color{Red}&space;y\_j}-\sum\_{i=1}^N&space;\alpha\_i^\*y\_i\(x\_i^T{\color{Red}&space;x\_j}\)&space;\end{aligned}](http://www.codecogs.com/eqnedit.php?latex=\begin{aligned}&space;w^*&=\sum_{i=1}^N&space;\alpha_i^*y_ix_i\\&space;b^*&={\color{Red}&space;y_j}-\sum_{i=1}^N&space;\alpha_i^*y_i%28x_i^T{\color{Red}&space;x_j}%29&space;\end{aligned})\)
+   \[![](../.gitbook/assets/gong-shi-20180713203827.png)\]\([http://www.codecogs.com/eqnedit.php?latex=\begin{aligned}&space;w^\*&=\sum\_{i=1}^N&space;\alpha\_i^\*y\_ix\_i\&space;b^\*&={\color{Red}&space;y\_j}-\sum\_{i=1}^N&space;\alpha\_i^\*y\_i\(x\_i^T{\color{Red}&space;x\_j}\)&space;\end{aligned}](http://www.codecogs.com/eqnedit.php?latex=\begin{aligned}&space;w^*&=\sum_{i=1}^N&space;\alpha_i^*y_ix_i\\&space;b^*&={\color{Red}&space;y_j}-\sum_{i=1}^N&space;\alpha_i^*y_i%28x_i^T{\color{Red}&space;x_j}%29&space;\end{aligned})\)
 
    可得分离超平面及分类决策函数为：
 
    [![](../.gitbook/assets/gong-shi-20180713111647.png)](http://www.codecogs.com/eqnedit.php?latex=w^*\cdot&space;x&plus;b^*=0)
 
-   \[![](../.gitbook/assets/gong-shi-20180713132655%20%282%29.png)\]\([http://www.codecogs.com/eqnedit.php?latex=f\(x\)=\mathrm{sign}\(w^\*\cdot&space;x&plus;b^\*](http://www.codecogs.com/eqnedit.php?latex=f%28x%29=\mathrm{sign}%28w^*\cdot&space;x&plus;b^*)\)\)
+   \[![](../.gitbook/assets/gong-shi-20180713132655%20%282%29.png)\]\([http://www.codecogs.com/eqnedit.php?latex=f\(x\)=\mathrm{sign}\(w^\*\cdot&space;x+b^\*](http://www.codecogs.com/eqnedit.php?latex=f%28x%29=\mathrm{sign}%28w^*\cdot&space;x&plus;b^*)\)\)
 
 ## 决策树
 
@@ -483,7 +482,7 @@
 
   1. 计算 `G_m(x)` 在训练集上的分类误差率
 
-     \[![](../.gitbook/assets/gong-shi-20180715142042.png)\]\([http://www.codecogs.com/eqnedit.php?latex=\begin{aligned}&space;e\_m&=P\(G\_m\(x\_i\)\neq&space;y\_i\)\\&=\sum\_{i=1}^Nw\_{m,i}\cdot&space;{\color{Red}&space;I\(G\_m\(x\_i\)\neq&space;y\_i\)}&space;\end{aligned}](http://www.codecogs.com/eqnedit.php?latex=\begin{aligned}&space;e_m&=P%28G_m%28x_i%29\neq&space;y_i%29\\&=\sum_{i=1}^Nw_{m,i}\cdot&space;{\color{Red}&space;I%28G_m%28x_i%29\neq&space;y_i%29}&space;\end{aligned})\)
+     \[![](../.gitbook/assets/gong-shi-20180715142042.png)\]\([http://www.codecogs.com/eqnedit.php?latex=\begin{aligned}&space;e\_m&=P\(G\_m\(x\_i\)\neq&space;y\_i\)\&=\sum\_{i=1}^Nw\_{m,i}\cdot&space;{\color{Red}&space;I\(G\_m\(x\_i\)\neq&space;y\_i\)}&space;\end{aligned}](http://www.codecogs.com/eqnedit.php?latex=\begin{aligned}&space;e_m&=P%28G_m%28x_i%29\neq&space;y_i%29\\&=\sum_{i=1}^Nw_{m,i}\cdot&space;{\color{Red}&space;I%28G_m%28x_i%29\neq&space;y_i%29}&space;\end{aligned})\)
 
      > `I(x)` 为指示函数：若`G(x)!=y`为真，则`I(G(x)!=y)=1`，反之为 `0`
      >
@@ -495,17 +494,17 @@
 
   3. 更新训练集的权值分布
 
-     \[![](../.gitbook/assets/gong-shi-20180715140328.png)\]\([http://www.codecogs.com/eqnedit.php?latex=\begin{aligned}&space;D\_{{\color{Red}m&plus;1}}&=\(w\_{m&plus;1,1},\cdots,w\_{m&plus;1,i},\cdots,w\_{m&plus;1,N}\)\\&space;w\_{{\color{Red}m&plus;1},i}&=\frac{w\_{{\color{Red}m},i}\cdot\exp\(-\alpha\_{\color{Red}m}\cdot{\color{Blue}y\_iG\_m\(x\_i\)&space;}\)}{Z\_{\color{Red}m}}&space;\end{aligned}](http://www.codecogs.com/eqnedit.php?latex=\begin{aligned}&space;D_{{\color{Red}m&plus;1}}&=%28w_{m&plus;1,1},\cdots,w_{m&plus;1,i},\cdots,w_{m&plus;1,N}%29\\&space;w_{{\color{Red}m&plus;1},i}&=\frac{w_{{\color{Red}m},i}\cdot\exp%28-\alpha_{\color{Red}m}\cdot{\color{Blue}y_iG_m%28x_i%29&space;}%29}{Z_{\color{Red}m}}&space;\end{aligned})\)
+     \[![](../.gitbook/assets/gong-shi-20180715140328.png)\]\([http://www.codecogs.com/eqnedit.php?latex=\begin{aligned}&space;D\_&=\(w\_{m+1,1},\cdots,w\_{m+1,i},\cdots,w\_{m+1,N}\)\&space;w\_&space;\end{aligned}](http://www.codecogs.com/eqnedit.php?latex=\begin{aligned}&space;D_{{\color{Red}m&plus;1}}&=%28w_{m&plus;1,1},\cdots,w_{m&plus;1,i},\cdots,w_{m&plus;1,N}%29\\&space;w_{{\color{Red}m&plus;1},i}&=\frac{w_{{\color{Red}m},i}\cdot\exp%28-\alpha_{\color{Red}m}\cdot{\color{Blue}y_iG_m%28x_i%29&space;}%29}{Z_{\color{Red}m}}&space;\end{aligned})\)
 
      其中 `Z_m` 为**规范化因子**，使 `D_m+1` 成为一个**概率分布**，类似 `Softmax` 函数
 
      因为 `y, G(x) ∈ {-1, 1}`，所以实际上
 
-     \[![](../.gitbook/assets/gong-shi-20180715134916.png)\]\([http://www.codecogs.com/eqnedit.php?latex={\color{Blue}y\_iG\_m\(x\_i\)&space;}=\left\{\begin{matrix}&space;1,&&space;G\_m\(x\_i\)=y\_i&space;\\&space;-1,&&space;G\_m\(x\_i\)\neq&space;y\_i&space;\end{matrix}\right](http://www.codecogs.com/eqnedit.php?latex={\color{Blue}y_iG_m%28x_i%29&space;}=\left\{\begin{matrix}&space;1,&&space;G_m%28x_i%29=y_i&space;\\&space;-1,&&space;G_m%28x_i%29\neq&space;y_i&space;\end{matrix}\right).\)
+     \[![](../.gitbook/assets/gong-shi-20180715134916.png)\]\([http://www.codecogs.com/eqnedit.php?latex={\color{Blue}y\_iG\_m\(x\_i\)&space;}=\left{\begin{matrix}&space;1,&&space;G\_m\(x\_i\)=y\_i&space;\&space;-1,&&space;G\_m\(x\_i\)\neq&space;y\_i&space;\end{matrix}\right](http://www.codecogs.com/eqnedit.php?latex={\color{Blue}y_iG_m%28x_i%29&space;}=\left\{\begin{matrix}&space;1,&&space;G_m%28x_i%29=y_i&space;\\&space;-1,&&space;G_m%28x_i%29\neq&space;y_i&space;\end{matrix}\right).\)
 
      因此 `w_{m+1,i}` 也可以写作
 
-     \[![](../.gitbook/assets/gong-shi-20180715135945.png)\]\([http://www.codecogs.com/eqnedit.php?latex=\dpi{120}&space;w\_{m&plus;1,i}=\left\{\begin{matrix}&space;\frac{w\_{m,i}}{Z\_m}e^{\color{Red}&space;{-\alpha\_m}},&space;&&space;G\_m\(x\_i\)=y\_i&space;\\&space;\frac{w\_{m,i}}{Z\_m}e^{\color{Red}&space;{\alpha\_m}},&&space;G\_m\(x\_i\)\neq&space;y\_i&space;\end{matrix}\right](http://www.codecogs.com/eqnedit.php?latex=\dpi{120}&space;w_{m&plus;1,i}=\left\{\begin{matrix}&space;\frac{w_{m,i}}{Z_m}e^{\color{Red}&space;{-\alpha_m}},&space;&&space;G_m%28x_i%29=y_i&space;\\&space;\frac{w_{m,i}}{Z_m}e^{\color{Red}&space;{\alpha_m}},&&space;G_m%28x_i%29\neq&space;y_i&space;\end{matrix}\right).\)
+     \[![](../.gitbook/assets/gong-shi-20180715135945.png)\]\([http://www.codecogs.com/eqnedit.php?latex=\dpi{120}&space;w\_{m+1,i}=\left{\begin{matrix}&space;\frac{w\_{m,i}}{Z\_m}e^{\color{Red}&space;{-\alpha\_m}},&space;&&space;G\_m\(x\_i\)=y\_i&space;\&space;\frac{w\_{m,i}}{Z\_m}e^{\color{Red}&space;{\alpha\_m}},&&space;G\_m\(x\_i\)\neq&space;y\_i&space;\end{matrix}\right](http://www.codecogs.com/eqnedit.php?latex=\dpi{120}&space;w_{m&plus;1,i}=\left\{\begin{matrix}&space;\frac{w_{m,i}}{Z_m}e^{\color{Red}&space;{-\alpha_m}},&space;&&space;G_m%28x_i%29=y_i&space;\\&space;\frac{w_{m,i}}{Z_m}e^{\color{Red}&space;{\alpha_m}},&&space;G_m%28x_i%29\neq&space;y_i&space;\end{matrix}\right).\)
 
 * 构建基学习器的**线性组合**
 
@@ -515,7 +514,7 @@
 
 * 开始时，训练集中所有数据具有均匀的权值分布
 * 计算分类误差率，实际上就是计算所有分类错误的数据的权值之和
-* `G_m(x)` 的系数 `α_m` 表示该学习器在最终学习器中的重要性；公式 
+* `G_m(x)` 的系数 `α_m` 表示该学习器在最终学习器中的重要性；公式
 
   [![](../.gitbook/assets/gong-shi-20180715133256%20%281%29.png)](http://www.codecogs.com/eqnedit.php?latex=\alpha_m=\frac{1}{2}\ln\frac{1-e_m}{e_m}) 表明当分类错误率 `e_m <= 1/2` 时，`α_m >= 0`，并且 `α_m` 随 `e_m` 的减小而增大
 
@@ -550,7 +549,7 @@
 
   1. 更新模型 `f_m(x)`
 
-     \[![](../.gitbook/assets/gong-shi-20180716143232.png)\]\([http://www.codecogs.com/eqnedit.php?latex=f\_m\(x\)={\color{Red}&space;f\_{m-1}\(x\)&plus;\beta&space;b\(x;\gamma\)}](http://www.codecogs.com/eqnedit.php?latex=f_m%28x%29={\color{Red}&space;f_{m-1}%28x%29&plus;\beta&space;b%28x;\gamma%29})\)
+     \[![](../.gitbook/assets/gong-shi-20180716143232.png)\]\([http://www.codecogs.com/eqnedit.php?latex=f\_m\(x\)={\color{Red}&space;f\_{m-1}\(x\)+\beta&space;b\(x;\gamma\)}](http://www.codecogs.com/eqnedit.php?latex=f_m%28x%29={\color{Red}&space;f_{m-1}%28x%29&plus;\beta&space;b%28x;\gamma%29})\)
 
 * 得到加法模型
 
@@ -584,12 +583,12 @@
 * 输入：训练集 `T={(x1,y1),..,(xN,yN)}, xi ∈ R^n, yi ∈ R`
 * 输出：回归提升树 `f_M(x)`
 * 初始化 `f_0(x)=0`  
-* 对 `m=1,2,..,M` 1. 计算**残差** 
-  1. **拟合残差**学习下一个回归树的参数 
+* 对 `m=1,2,..,M` 1. 计算**残差** 1. **拟合残差**学习下一个回归树的参数
 
-     > [回归树算法推导](a-ji-qi-xue-xi-suan-fa.md#回归树算法推导) TODO
+  > [回归树算法推导](a-ji-qi-xue-xi-suan-fa.md#回归树算法推导) TODO
 
-  2. 更新 `f_m(x)`
+  1. 更新 `f_m(x)`
+
 * 得到回归提升树 
 * 以平凡损失为例 TODO
 
@@ -603,13 +602,13 @@
 * 输入：训练集 `T={(x1,y1),..,(xN,yN)}, xi ∈ R^n, yi ∈ R`；损失函数 `L(y,f(x))`；
 * 输出：回归树 `f_M(x)`
 * 初始化回归树 
-* 对 `m=1,2,..,M` 1. 对 `i=1,2,..,N`，计算残差/负梯度 
-  1. 对 `r_mi` 拟合一个回归树，得到第 `m` 棵树的叶节点区域 
+* 对 `m=1,2,..,M` 1. 对 `i=1,2,..,N`，计算残差/负梯度 1. 对 `r_mi` 拟合一个回归树，得到第 `m` 棵树的叶节点区域
 
-     > [CART 回归树算法推导](a-ji-qi-xue-xi-suan-fa.md#cart-回归树算法推导)
+  > [CART 回归树算法推导](a-ji-qi-xue-xi-suan-fa.md#cart-回归树算法推导)
 
-  2. 对 `j=1,2,..,J`，计算 
-  3. 更新回归树 
+  1. 对 `j=1,2,..,J`，计算 
+  2. 更新回归树 
+
 * 得到回归树 
 * 说明：
   * 算法第 1 步初始化，估计使损失函数最小的常数值，得到一棵只有一个根节点的树
