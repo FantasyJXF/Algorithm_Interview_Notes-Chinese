@@ -132,19 +132,19 @@
 
 * **二项**逻辑斯蒂回归模型即如下的**条件概率分布**
 
-  \[![](../.gitbook/assets/gong-shi-20180709152707%20%281%29.png)\]\([http://www.codecogs.com/eqnedit.php?latex=P\(Y=1\|x\)=\frac{\exp\(wx\)}{1+\exp\(wx\)}=\frac{1}{1+\exp\(-wx\)}](http://www.codecogs.com/eqnedit.php?latex=P%28Y=1|x%29=\frac{\exp%28wx%29}{1&plus;\exp%28wx%29}=\frac{1}{1&plus;\exp%28-wx%29})\)
+  \[![](https://github.com/FantasyJXF/Artificial-Intelligence/tree/fe2b994de674c3dc2278e5ffaabfb466a280650c/.gitbook/assets/gong-shi-20180709152707%20%281%29.png)\]\([http://www.codecogs.com/eqnedit.php?latex=P\(Y=1\|x\)=\frac{\exp\(wx\)}{1+\exp\(wx\)}=\frac{1}{1+\exp\(-wx\)}](http://www.codecogs.com/eqnedit.php?latex=P%28Y=1|x%29=\frac{\exp%28wx%29}{1&plus;\exp%28wx%29}=\frac{1}{1&plus;\exp%28-wx%29})\)
 
-  \[![](../.gitbook/assets/gong-shi-20180709113237%20%281%29.png)\]\([http://www.codecogs.com/eqnedit.php?latex=P\(Y=0\|x\)=1-P\(Y=1\|x](http://www.codecogs.com/eqnedit.php?latex=P%28Y=0|x%29=1-P%28Y=1|x)\)\)
+  \[![](https://github.com/FantasyJXF/Artificial-Intelligence/tree/fe2b994de674c3dc2278e5ffaabfb466a280650c/.gitbook/assets/gong-shi-20180709113237%20%281%29.png)\]\([http://www.codecogs.com/eqnedit.php?latex=P\(Y=0\|x\)=1-P\(Y=1\|x](http://www.codecogs.com/eqnedit.php?latex=P%28Y=0|x%29=1-P%28Y=1|x)\)\)
 
   > 简洁起见，省略了偏置 `b`；也可以看做将偏置扩充到了权重中
 
   **其中**
 
-  ![](../.gitbook/assets/gong-shi-20180709113801%20%281%29.png)
+  ![](https://github.com/FantasyJXF/Artificial-Intelligence/tree/fe2b994de674c3dc2278e5ffaabfb466a280650c/.gitbook/assets/gong-shi-20180709113801%20%281%29.png)
 
 * 通常会将以上两个分布记作：
 
-  ![](../.gitbook/assets/gong-shi-20180709153307%20%281%29.png)
+  ![](https://github.com/FantasyJXF/Artificial-Intelligence/tree/fe2b994de674c3dc2278e5ffaabfb466a280650c/.gitbook/assets/gong-shi-20180709153307%20%281%29.png)
 
 > 《统计学习方法》 6.1 逻辑斯蒂回归模型
 >
@@ -184,7 +184,7 @@
 
 * 设 `Y ∈ {1,2,..K}`，则多项式逻辑斯蒂回归模型为：
 
-  \[![](../.gitbook/assets/gong-shi-20180709162840%20%281%29.png)\]\([http://www.codecogs.com/eqnedit.php?latex=\begin{aligned}&space;P\(Y=k\|x\)&=\frac{\exp\(w\_kx\)}{1+\sum\_{k=1}^{K-1}&space;\exp\(w\_kx\)}&space;\quad&space;k=1,2,..,K-1&space;\&space;P\(Y=K\|x\)&=\frac{1}{1+\sum\_{k=1}^{K-1}\exp\(w\_kx\)}&space;\end{aligned}](http://www.codecogs.com/eqnedit.php?latex=\begin{aligned}&space;P%28Y=k|x%29&=\frac{\exp%28w_kx%29}{1&plus;\sum_{k=1}^{K-1}&space;\exp%28w_kx%29}&space;\quad&space;k=1,2,..,K-1&space;\\&space;P%28Y=K|x%29&=\frac{1}{1&plus;\sum_{k=1}^{K-1}\exp%28w_kx%29}&space;\end{aligned})\)
+  \[![](https://github.com/FantasyJXF/Artificial-Intelligence/tree/fe2b994de674c3dc2278e5ffaabfb466a280650c/.gitbook/assets/gong-shi-20180709162840%20%281%29.png)\]\([http://www.codecogs.com/eqnedit.php?latex=\begin{aligned}&space;P\(Y=k\|x\)&=\frac{\exp\(w\_kx\)}{1+\sum\_{k=1}^{K-1}&space;\exp\(w\_kx\)}&space;\quad&space;k=1,2,..,K-1&space;\&space;P\(Y=K\|x\)&=\frac{1}{1+\sum\_{k=1}^{K-1}\exp\(w\_kx\)}&space;\end{aligned}](http://www.codecogs.com/eqnedit.php?latex=\begin{aligned}&space;P%28Y=k|x%29&=\frac{\exp%28w_kx%29}{1&plus;\sum_{k=1}^{K-1}&space;\exp%28w_kx%29}&space;\quad&space;k=1,2,..,K-1&space;\\&space;P%28Y=K|x%29&=\frac{1}{1&plus;\sum_{k=1}^{K-1}\exp%28w_kx%29}&space;\end{aligned})\)
 
 * 类似 `Softmax`
 
@@ -262,7 +262,7 @@
 
 * 分类决策函数 `f(x)`
 
-  \[![](../.gitbook/assets/gong-shi-20180713132655%20%281%29.png)\]\([http://www.codecogs.com/eqnedit.php?latex=f\(x\)=\mathrm{sign}\(w^\*\cdot&space;x+b^\*](http://www.codecogs.com/eqnedit.php?latex=f%28x%29=\mathrm{sign}%28w^*\cdot&space;x&plus;b^*)\)\)
+  \[![](https://github.com/FantasyJXF/Artificial-Intelligence/tree/fe2b994de674c3dc2278e5ffaabfb466a280650c/.gitbook/assets/gong-shi-20180713132655%20%281%29.png)\]\([http://www.codecogs.com/eqnedit.php?latex=f\(x\)=\mathrm{sign}\(w^\*\cdot&space;x+b^\*](http://www.codecogs.com/eqnedit.php?latex=f%28x%29=\mathrm{sign}%28w^*\cdot&space;x&plus;b^*)\)\)
 
 ### **SVM 标准问题的推导**\(2\)
 
@@ -270,11 +270,11 @@
 
    给定训练集`T`和超平面`(w,b)`，定义**函数间隔**`γ^`：
 
-   \[![](../.gitbook/assets/gong-shi-20180713134514%20%281%29.png)\]\([http://www.codecogs.com/eqnedit.php?latex=\begin{aligned}&space;\hat{\gamma}&=\underset{i=1,\cdots,N}{\min}\,y\_i\(wx\_i+b\)&space;\&space;&=\underset{i=1,\cdots,N}{\min}\,\hat{\gamma}\_i\end{aligned}](http://www.codecogs.com/eqnedit.php?latex=\begin{aligned}&space;\hat{\gamma}&=\underset{i=1,\cdots,N}{\min}\,y_i%28wx_i&plus;b%29&space;\\&space;&=\underset{i=1,\cdots,N}{\min}\,\hat{\gamma}_i\end{aligned})\)
+   \[![](https://github.com/FantasyJXF/Artificial-Intelligence/tree/fe2b994de674c3dc2278e5ffaabfb466a280650c/.gitbook/assets/gong-shi-20180713134514%20%281%29.png)\]\([http://www.codecogs.com/eqnedit.php?latex=\begin{aligned}&space;\hat{\gamma}&=\underset{i=1,\cdots,N}{\min}\,y\_i\(wx\_i+b\)&space;\&space;&=\underset{i=1,\cdots,N}{\min}\,\hat{\gamma}\_i\end{aligned}](http://www.codecogs.com/eqnedit.php?latex=\begin{aligned}&space;\hat{\gamma}&=\underset{i=1,\cdots,N}{\min}\,y_i%28wx_i&plus;b%29&space;\\&space;&=\underset{i=1,\cdots,N}{\min}\,\hat{\gamma}_i\end{aligned})\)
 
    对 `w` 作规范化，使函数间隔成为**几何间隔**`γ`
 
-   ![](../.gitbook/assets/gong-shi-20180713134322%20%281%29.png)
+   ![](https://github.com/FantasyJXF/Artificial-Intelligence/tree/fe2b994de674c3dc2278e5ffaabfb466a280650c/.gitbook/assets/gong-shi-20180713134322%20%281%29.png)
 
 2. **最大化几何间隔**
 
@@ -282,7 +282,7 @@
 
    由函数间隔与几何间隔的关系，等价于
 
-   \[![](../.gitbook/assets/gong-shi-20180808201943%20%281%29.png)\]\([http://www.codecogs.com/eqnedit.php?latex=\begin{aligned}&space;&\underset{w,b}{\max}&space;\quad{\color{Red}&space;\frac{\hat{\gamma}}{\left&space;\|&space;w&space;\right&space;\|}}&space;\&space;&&space;\mathrm{s.t.}\quad,&space;y\_i\(wx\_i+b\)&space;\geq&space;{\color{Red}&space;\hat{\gamma}},\quad&space;i=1,2,\cdots,N&space;\end{aligned}](http://www.codecogs.com/eqnedit.php?latex=\begin{aligned}&space;&\underset{w,b}{\max}&space;\quad{\color{Red}&space;\frac{\hat{\gamma}}{\left&space;|&space;w&space;\right&space;|}}&space;\&space;&&space;\mathrm{s.t.}\quad,&space;y_i%28wx_i&plus;b%29&space;\geq&space;{\color{Red}&space;\hat{\gamma}},\quad&space;i=1,2,\cdots,N&space;\end{aligned})\)
+   \[![](https://github.com/FantasyJXF/Artificial-Intelligence/tree/fe2b994de674c3dc2278e5ffaabfb466a280650c/.gitbook/assets/gong-shi-20180808201943%20%281%29.png)\]\([http://www.codecogs.com/eqnedit.php?latex=\begin{aligned}&space;&\underset{w,b}{\max}&space;\quad{\color{Red}&space;\frac{\hat{\gamma}}{\left&space;\|&space;w&space;\right&space;\|}}&space;\&space;&&space;\mathrm{s.t.}\quad,&space;y\_i\(wx\_i+b\)&space;\geq&space;{\color{Red}&space;\hat{\gamma}},\quad&space;i=1,2,\cdots,N&space;\end{aligned}](http://www.codecogs.com/eqnedit.php?latex=\begin{aligned}&space;&\underset{w,b}{\max}&space;\quad{\color{Red}&space;\frac{\hat{\gamma}}{\left&space;|&space;w&space;\right&space;|}}&space;\&space;&&space;\mathrm{s.t.}\quad,&space;y_i%28wx_i&plus;b%29&space;\geq&space;{\color{Red}&space;\hat{\gamma}},\quad&space;i=1,2,\cdots,N&space;\end{aligned})\)
 
    函数间隔`γ^`的取值不会影响最终的超平面`(w,b)`：取`γ^=1`；又最大化 `1/||w||` 等价于最小化`1/2*||w||^2`，于是有
 
@@ -310,7 +310,7 @@
 
 3. 求 `L` 对 `(w,b)` 的极小
 
-   [![](../.gitbook/assets/gong-shi-20180713193142%20%281%29.png)](http://www.codecogs.com/eqnedit.php?latex=\begin{aligned}&space;\mathrm{set}\quad&space;\frac{\partial&space;L}{\partial&space;w}=0&space;\;\;&\Rightarrow\;&space;w-\sum_{i=1}^N&space;{\color{Red}&space;\alpha_i&space;y_i&space;x_i}=0\\&space;&\Rightarrow\;&space;w=\sum_{i=1}^N&space;{\color{Red}&space;\alpha_i&space;y_i&space;x_i}&space;\end{aligned})
+   [![](https://github.com/FantasyJXF/Artificial-Intelligence/tree/fe2b994de674c3dc2278e5ffaabfb466a280650c/.gitbook/assets/gong-shi-20180713193142%20%281%29.png)](http://www.codecogs.com/eqnedit.php?latex=\begin{aligned}&space;\mathrm{set}\quad&space;\frac{\partial&space;L}{\partial&space;w}=0&space;\;\;&\Rightarrow\;&space;w-\sum_{i=1}^N&space;{\color{Red}&space;\alpha_i&space;y_i&space;x_i}=0\\&space;&\Rightarrow\;&space;w=\sum_{i=1}^N&space;{\color{Red}&space;\alpha_i&space;y_i&space;x_i}&space;\end{aligned})
 
    [![](../.gitbook/assets/gong-shi-20180713193328.png)](http://www.codecogs.com/eqnedit.php?latex=\begin{aligned}&space;\mathrm{set}\quad&space;\frac{\partial&space;L}{\partial&space;b}=0&space;\;\;&\Rightarrow\;&space;\sum_{i=1}^N&space;{\color{Red}&space;\alpha_i&space;y_i}=0&space;\end{aligned})
 
@@ -342,7 +342,7 @@
 
    [![](../.gitbook/assets/gong-shi-20180713111647.png)](http://www.codecogs.com/eqnedit.php?latex=w^*\cdot&space;x&plus;b^*=0)
 
-   \[![](../.gitbook/assets/gong-shi-20180713132655%20%282%29.png)\]\([http://www.codecogs.com/eqnedit.php?latex=f\(x\)=\mathrm{sign}\(w^\*\cdot&space;x+b^\*](http://www.codecogs.com/eqnedit.php?latex=f%28x%29=\mathrm{sign}%28w^*\cdot&space;x&plus;b^*)\)\)
+   \[![](https://github.com/FantasyJXF/Artificial-Intelligence/tree/fe2b994de674c3dc2278e5ffaabfb466a280650c/.gitbook/assets/gong-shi-20180713132655%20%282%29.png)\]\([http://www.codecogs.com/eqnedit.php?latex=f\(x\)=\mathrm{sign}\(w^\*\cdot&space;x+b^\*](http://www.codecogs.com/eqnedit.php?latex=f%28x%29=\mathrm{sign}%28w^*\cdot&space;x&plus;b^*)\)\)
 
 ## 决策树
 
@@ -508,7 +508,7 @@
 
 * 构建基学习器的**线性组合**
 
-  \[![](../.gitbook/assets/gong-shi-20180715141210%20%281%29.png)\]\([http://www.codecogs.com/eqnedit.php?latex=G\(x\)=\mathrm{sign}\(\sum\_{m=1}^M\alpha\_mG\_m\(x](http://www.codecogs.com/eqnedit.php?latex=G%28x%29=\mathrm{sign}%28\sum_{m=1}^M\alpha_mG_m%28x)\)\)\)
+  \[![](https://github.com/FantasyJXF/Artificial-Intelligence/tree/fe2b994de674c3dc2278e5ffaabfb466a280650c/.gitbook/assets/gong-shi-20180715141210%20%281%29.png)\]\([http://www.codecogs.com/eqnedit.php?latex=G\(x\)=\mathrm{sign}\(\sum\_{m=1}^M\alpha\_mG\_m\(x](http://www.codecogs.com/eqnedit.php?latex=G%28x%29=\mathrm{sign}%28\sum_{m=1}^M\alpha_mG_m%28x)\)\)\)
 
 #### AdaBoost 算法要点说明
 
@@ -516,7 +516,7 @@
 * 计算分类误差率，实际上就是计算所有分类错误的数据的权值之和
 * `G_m(x)` 的系数 `α_m` 表示该学习器在最终学习器中的重要性；公式
 
-  [![](../.gitbook/assets/gong-shi-20180715133256%20%281%29.png)](http://www.codecogs.com/eqnedit.php?latex=\alpha_m=\frac{1}{2}\ln\frac{1-e_m}{e_m}) 表明当分类错误率 `e_m <= 1/2` 时，`α_m >= 0`，并且 `α_m` 随 `e_m` 的减小而增大
+  [![](https://github.com/FantasyJXF/Artificial-Intelligence/tree/fe2b994de674c3dc2278e5ffaabfb466a280650c/.gitbook/assets/gong-shi-20180715133256%20%281%29.png)](http://www.codecogs.com/eqnedit.php?latex=\alpha_m=\frac{1}{2}\ln\frac{1-e_m}{e_m}) 表明当分类错误率 `e_m <= 1/2` 时，`α_m >= 0`，并且 `α_m` 随 `e_m` 的减小而增大
 
 * 被基分类器分类错误的样本权值会扩大，而分类正确的权值会缩小——**不改变训练数据，而不断改变训练数据权值的分布，使训练数据在基学习器的学习中起到不同的作用**，这是 AdaBoost 的一个特点。
 
@@ -553,7 +553,7 @@
 
 * 得到加法模型
 
-  \[![](../.gitbook/assets/gong-shi-20180716143509%20%281%29.png)\]\([http://www.codecogs.com/eqnedit.php?latex=f\(x\)=f\_M\(x\)={\color{Red}&space;\sum\_{m=1}^M}{\color{Blue}&space;\beta\_m}b\(x;\gamma\_m](http://www.codecogs.com/eqnedit.php?latex=f%28x%29=f_M%28x%29={\color{Red}&space;\sum_{m=1}^M}{\color{Blue}&space;\beta_m}b%28x;\gamma_m)\)\)
+  \[![](https://github.com/FantasyJXF/Artificial-Intelligence/tree/fe2b994de674c3dc2278e5ffaabfb466a280650c/.gitbook/assets/gong-shi-20180716143509%20%281%29.png)\]\([http://www.codecogs.com/eqnedit.php?latex=f\(x\)=f\_M\(x\)={\color{Red}&space;\sum\_{m=1}^M}{\color{Blue}&space;\beta\_m}b\(x;\gamma\_m](http://www.codecogs.com/eqnedit.php?latex=f%28x%29=f_M%28x%29={\color{Red}&space;\sum_{m=1}^M}{\color{Blue}&space;\beta_m}b%28x;\gamma_m)\)\)
 
 * 前向分步算法将**同时**求解`m=1,2,..,M`所有参数`(β_m,γ_m)`的问题**简化**为**逐次**求解各`(β_m,γ_m)`的优化问题——思想上有点像**梯度下降**
 
@@ -589,7 +589,7 @@
 
   1. 更新 `f_m(x)`
 
-* 得到回归提升树 
+* 得到回归提升树
 * 以平凡损失为例 TODO
 
 ### 梯度提升\(GB\)算法
@@ -609,7 +609,7 @@
   1. 对 `j=1,2,..,J`，计算 
   2. 更新回归树 
 
-* 得到回归树 
+* 得到回归树
 * 说明：
   * 算法第 1 步初始化，估计使损失函数最小的常数值，得到一棵只有一个根节点的树
   * 第 2\(i\) 步计算损失函数的负梯度，将其作为残差的估计
