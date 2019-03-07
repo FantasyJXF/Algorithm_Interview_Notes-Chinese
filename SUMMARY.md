@@ -53,7 +53,7 @@
   * [C++左值与右值](programming/cppc-zuo-zhi-yu-you-zhi.md)
   * [Python基础](programming/pythona-ji-chu.md)
 * [笔试面经](interview/README.md)
-  * [360](interview/bi-shi-360180827.md)
+  * [360](interview/bi-shi-360-180827.md)
   * [iHandy](interview/bi-shi-ihandy180927.md)
   * [作业帮](interview/bi-shi-zuo-ye-bang-180925.md)
   * [字节跳动](interview/bi-shi-zi-jie-tiao-dong-180812.md)
@@ -70,6 +70,6 @@
   * [腾讯](interview/bi-shi-teng-xun-180916.md)
   * [迅雷](interview/bi-shi-xun-lei-180912.md)
   * [顺丰](interview/bi-shi-shun-feng-180917.md)
-  * [旷视](interview/bi-shi-kuang-shi-20190306.md)
-  * [爱笔](interview/bi-shi-ai-bi-20190301.md)
-
+  * [旷视](interview/bi-shi-kuang-shi-190306.md)
+  * [爱笔](interview/bi-shi-ai-bi-190301.md)
+  * [魔门塔](interview/bi-shi-mo-men-ta-190302.md)
