@@ -73,3 +73,4 @@
   * [旷视](interview/bi-shi-kuang-shi-190306.md)
   * [爱笔](interview/bi-shi-ai-bi-190301.md)
   * [魔门塔](interview/bi-shi-mo-men-ta-190302.md)
+  * [搜狐](interview/bi-shi-sou-hu-190312.md)
