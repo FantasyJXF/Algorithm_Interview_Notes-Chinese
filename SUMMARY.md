@@ -65,7 +65,8 @@
   * [滴滴](interview/bi-shi-di-di-180918.md)
   * [爱奇艺](interview/bi-shi-ai-qi-yi-180915.md)
   * [百度](interview/bi-shi-bai-du-180911.md)
-  * [百度again](interview/bi-shi-bai-du-180914.md)
+  * [百度2](interview/bi-shi-bai-du-180914.md)
+  * [百度3](interview/bai-du-3.md)
   * [百词斩](interview/bi-shi-bai-ci-zhan-180920.md)
   * [腾讯](interview/bi-shi-teng-xun-180916.md)
   * [迅雷](interview/bi-shi-xun-lei-180912.md)
@@ -74,3 +75,4 @@
   * [爱笔](interview/bi-shi-ai-bi-190301.md)
   * [魔门塔](interview/bi-shi-mo-men-ta-190302.md)
   * [搜狐](interview/bi-shi-sou-hu-190312.md)
+

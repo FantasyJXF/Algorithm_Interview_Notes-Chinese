@@ -9,7 +9,7 @@
 ### RoadMap
 
 * ⚽  [机器学习](https://fantasy-jxf.gitbook.io/artificial-intelligence/machine_learning)
-* 🏀  [深度学习](https://github.com/FantasyJXF/Artificial-Intelligence/tree/24734d4bc8f27c89dd6cc899d185d695c5603854/A-深度学习/README.md)
+* 🏀  [深度学习](https://fantasy-jxf.gitbook.io/artificial-intelligence/deep_learning)
 * 🍔 [自然语言处理](https://github.com/FantasyJXF/Artificial-Intelligence/tree/24734d4bc8f27c89dd6cc899d185d695c5603854/B-自然语言处理/README.md)
 * 🍟 [计算机视觉](https://github.com/FantasyJXF/Artificial-Intelligence/tree/24734d4bc8f27c89dd6cc899d185d695c5603854/B-计算机视觉/README.md)
 * 🍒 [数学](https://github.com/FantasyJXF/Artificial-Intelligence/tree/24734d4bc8f27c89dd6cc899d185d695c5603854/C-数学/README.md)
