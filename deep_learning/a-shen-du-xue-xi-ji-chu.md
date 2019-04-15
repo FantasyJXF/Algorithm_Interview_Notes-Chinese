@@ -1,21 +1,8 @@
 # 深度学习基础
 
-## 深度学习基础
-
-### 相关专题
-
-* [《深度学习》整理](https://github.com/FantasyJXF/Artificial-Intelligence/tree/ff40df9ea2a4579767c0a29baed45c578389cd4e/A-深度学习/《深度学习》整理/README.md)
-* [CNN 专题](https://github.com/FantasyJXF/Artificial-Intelligence/tree/ff40df9ea2a4579767c0a29baed45c578389cd4e/A-深度学习/B-专题-CNN/README.md)
-* [RNN 专题](https://github.com/FantasyJXF/Artificial-Intelligence/tree/ff40df9ea2a4579767c0a29baed45c578389cd4e/A-深度学习/B-专题-RNN/README.md)
-* [优化算法专题](https://github.com/FantasyJXF/Artificial-Intelligence/tree/ff40df9ea2a4579767c0a29baed45c578389cd4e/A-深度学习/C-专题-优化算法/README.md)
-  * **随机梯度下降**
-  * **动量**算法
-  * **自适应学习率**算法
-  * 基于**二阶梯度**的优化算法
-
 ### Index
 
-* [过拟合与欠拟合](a-shen-du-xue-xi-ji-chu.md#过拟合与欠拟合)
+* 过拟合与欠拟合 
   * [降低过拟合风险的方法](a-shen-du-xue-xi-ji-chu.md#降低过拟合风险的方法)
   * [降低欠拟合风险的方法](a-shen-du-xue-xi-ji-chu.md#降低欠拟合风险的方法)
 * [反向传播算法](a-shen-du-xue-xi-ji-chu.md#反向传播算法)
